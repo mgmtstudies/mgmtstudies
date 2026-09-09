@@ -7,10 +7,6 @@ from docxtpl import DocxTemplate
 from supabase import create_client
 import io
 
-# 1. Supabase Initialization
-url = st.secrets["SUPABASE_URL"]
-key = st.secrets["SUPABASE_KEY"]
-supabase = create_client(url, key)
 
 # CSV FILE SE DATA LOAD KARNE KA FUNCTION (OPTIMIZED FOR YOUR CSV)
 @st.cache_data
